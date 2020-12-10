@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-light align-items-center">
+        <a class="navbar-brand p-0" href="#">
+          <h1>d’Perfume</h1>
+          <img src="./assets/images/d’Perfume.png" class="d-inline-block align-top" alt="">
+        </a>
+
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active d-flex align-items-center" href="#">
+              <span class="material-icons">
+                store
+                </span><h7>Product</h7></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="#">
+              <span class="material-icons">
+                person
+                </span><h7>log in</h7></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="#">
+              <span class="material-icons">
+                favorite
+                </span><h7>Wishlist</h7></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled d-flex align-items-center" href="#" tabindex="-1" aria-disabled="true">
+              <span class="material-icons">
+                local_grocery_store
+                </span><h7>Cart(3)</h7></a>
+          </li>
+        </ul>
+
+      </nav>
+    </div>  
+  </header>
+
+  <%- contents %>
+
+  <footer class="footer">
+    footer
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
