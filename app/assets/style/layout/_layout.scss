@@ -1,3 +1,8 @@
 .header {
+    .navbar {
+        &-badge {
+            transform: translateX(-6px) translateY(-6px);
+        }
+    }
 
 }
