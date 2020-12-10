@@ -18,8 +18,9 @@ h2, .h2 { @include font-size($h2-font-size); }
 h3, .h3 { @include font-size($h3-font-size); }
 h4, .h4 { @include font-size($h4-font-size); }
 h5, .h5 { @include font-size($h5-font-size); }
-h6, .h6 { @include font-size($h6-font-size); }
-h6, .h7 { @include font-size($h7-font-size); }
+h6, .h6 { @include font-size($h6-font-size); }  //16
+.h7 { @include font-size($h7-font-size); }   //20
+.h8 { @include font-size($h8-font-size); }   //14
 
 .lead {
   @include font-size($lead-font-size);

@@ -1,0 +1,15 @@
+.navbar-nav {
+    @include breakpoint(pad) {
+      background: #707070;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      .nav-item {
+        border-bottom: 1px solid $white;
+      }
+      .nav-link {
+        color: $white !important;
+      }
+    }
+  }

@@ -1,3 +1,16 @@
 .header {
+    .nav-link {
+        &-p {
+        padding: 16px 0 16px 32px;
+        }
+        &-badge {
+            transform: translateX(-6px) translateY(-9px);
+        }
 
+    }
+}
+.footer {
+    .nav-link-p {
+        padding: 28px 0 36px 28px;
+    }
 }
