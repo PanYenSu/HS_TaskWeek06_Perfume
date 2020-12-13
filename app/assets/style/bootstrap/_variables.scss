@@ -59,7 +59,8 @@ $colors: map-merge(
     "cyan":       $cyan,
     "white":      $white,
     "gray":       $gray-600,
-    "gray-dark":  $gray-800
+    "gray-dark":  $gray-800,
+    "black":  $black,
   ),
   $colors
 );
@@ -74,6 +75,8 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
+$white:         #fff !default;
+$black:         #000 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
@@ -87,7 +90,9 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "white":      $white,
+    "black":      $black,
   ),
   $theme-colors
 );
@@ -146,11 +151,15 @@ $spacers: map-merge(
     2: ($spacer * .5),
     3: $spacer,
     4: ($spacer * 1.5),  //24
-    5: ($spacer * 3),
-    6: ($spacer * 2),  //32
+    5: ($spacer * 3),    //48
+    6: ($spacer * 2),    //32
     7: ($spacer * 1.25),  //20
     8: ($spacer * 1.75),  //28
-    9: ($spacer * 2.25)  //36
+    9: ($spacer * 2.25),   //36
+    10: ($spacer * 3.75),   //60
+    11: ($spacer * 3.25),   //52
+    12: ($spacer * 1.875),   //30
+    13: ($spacer * 2.5)   //40
   ),
   $spacers
 );

@@ -6,18 +6,21 @@
     &-form {        
         margin-bottom: 112px;
     }
-    &-input {
-        max-width: 219px;
-    }   
-    &-btn {
-        max-width: 131px;
+    @include media-breakpoint-up(md) {
+        &-input {
+            max-width: 219px;
+        }   
+        &-btn {
+            max-width: 131px;
+        }
     }
     @include media-breakpoint-down(md) {
         &-input {
-            max-width: 100%;
+            width: 60%;
         }   
         &-btn {
-            max-width: 100%;
+            width: 40%;
         }
+    }
 
 }

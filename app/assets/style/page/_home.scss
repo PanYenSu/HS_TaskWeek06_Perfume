@@ -1,0 +1,60 @@
+.banner {
+    background: url(../images/index1.jpg) center center no-repeat;
+    background-size: cover; 
+    min-height: 870px;
+    &-content {
+        min-width: 445px;
+        padding-top: 295px;
+        padding-bottom: 295px;
+    }
+    p:nth-last-child(1) {       
+        line-height: 2.25rem;
+    }
+    @include media-breakpoint-down(md) {
+        min-height: 480px;
+        p:nth-child(1) {
+            font-size: 2rem;
+        }
+        p:nth-last-child(1) {
+            line-height: 1.875rem;
+            font-size: 1.25rem;
+        }
+        &-content {
+            min-width: 345px;
+            padding-top: 101px;
+            padding-bottom: 135px;
+            
+        }
+    }
+}
+.description {
+    .media-body {
+        @include media-breakpoint-up(lg) {
+            padding-left: 110px;
+            padding-right: 110px;
+        }
+        p {  
+         line-height: 30px;
+        }
+        p.train {
+         line-height: 24px;
+        }
+        .train-item {
+            padding-bottom: 52px;
+        }
+        .train-btn {
+            font-size: 24px;
+        }
+    }
+}
+.popular {
+    .list-group {
+        padding-top: 32px;
+        padding-bottom: 36px;
+        @include media-breakpoint-up(lg) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        } 
+        
+    }
+}
