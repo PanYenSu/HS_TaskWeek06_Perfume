@@ -1,6 +1,10 @@
 .product {
  margin-top: 80px;
  margin-bottom: 80px;
+ @include media-breakpoint-down(md) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
 //  .input-group-append {
 //      width: 190px;
@@ -12,4 +16,14 @@
         padding-right: 55px;
     }
 //  }
+    a {
+        margin-bottom: 40px;
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 80px;
+        } 
+        text-decoration: none;
+        // cursor: pointer;
+    }
+
+
 }
