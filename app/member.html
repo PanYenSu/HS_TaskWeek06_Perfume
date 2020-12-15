@@ -1,0 +1,77 @@
+---
+title: Member
+layout: ./app/layout.ejs
+engine: ejs
+current: member
+---
+
+<section class="member">
+    <div class="container row flex-column flex-lg-row justify-content-between ">
+      <div class="col-12 col-lg-2 pl-lg-0">
+        <h5 class="pb-8">會員中心</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active p-0 pb-4 " href="#">會員資料修改</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-0 pb-4" href="#">訂單查詢</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-0 pb-4" href="#">退／換貨申請</a>
+            </li>
+          </ul>
+      </div>
+      <div class="col-12 col-lg-7 ">
+        <p class="mb-4 border-bottom font-weight-bold">個人資料修改</p>
+        <form>            
+            <div class="form-row">
+              <div class="form-group row">
+                <label for="staticEmail" class=" col-sm-4 m-0">Email</label>
+                <!-- <div class="col-8"> -->
+                  <input type="text" readonly class="form-control-plaintext col-sm-8" id="staticEmail" value="email@example.com">
+                <!-- </div> -->
+              </div>
+              <!-- <div class="form-group ">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              </div> -->
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+      </div>
+      <div class="col-12 col-lg-3 pr-lg-0"></div>
+    </div>
+</section>

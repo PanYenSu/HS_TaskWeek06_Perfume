@@ -50,14 +50,7 @@
     }
   }
 }
-.btn-1 {
-  font-size: 28px;
-  min-width: 350px;
-  height: 60px;
-  @include media-breakpoint-down(md) {
-    min-width: 345px;
-  }
-}
+
 
 
 // Future-proof disabling of clicks on `<a>` elements

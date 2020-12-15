@@ -1,0 +1,37 @@
+---
+title: Login
+layout: ./app/layout.ejs
+engine: ejs
+current: login
+---
+
+<section class="login">
+    <div class="container row flex-column flex-lg-row justify-content-between ">
+      <div class="col-12 col-lg-8 pl-lg-0">
+        <img src="./assets/images/login1.jpg" class="img-fluid mb-12 mb-lg-0" alt="...">
+      </div>
+
+      <form class="col-12 col-lg-4 d-flex flex-column justify-content-center pr-lg-0">
+          <h2 class="mb-14">Log in</h2>
+        <div class="form-group mb-7">
+          <label for="exampleInputEmail1">帳號</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@example.com">        
+        </div>
+        <div class="form-group mb-lg-9">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        
+        <div class="d-flex justify-content-between align-items-center">
+            <a href="#"><p class="text-primary p-0">忘記密碼</p></a>
+            <div class="form-btn">
+                <a class="btn btn-outline-primary" href="#" role="button">註冊</a>
+                <a class="btn btn-primary" href="member.html" role="button">登入</a>
+            </div>
+            
+        </div>
+        
+      </form>
+
+    </div>
+</section>

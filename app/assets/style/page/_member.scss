@@ -1,0 +1,13 @@
+.member {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    @include media-breakpoint-down(md) {
+       margin-top: 40px;
+       margin-bottom: 106px;
+   }
+    a.nav-link:hover, a.nav-link:focus {
+            text-decoration: underline;
+            text-decoration-color: $primary;
+            
+        }
+    }

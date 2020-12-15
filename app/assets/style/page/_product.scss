@@ -10,13 +10,9 @@
 //      width: 190px;
 //     flex-grow: 1;
 //     flex-shrink: 1;
-//     flex-basis: auto;
-    .btn {
-        padding-left: 55px;
-        padding-right: 55px;
-    }
+//     flex-basis: auto;    
 //  }
-    a {
+    .btn-product-favorite {
         margin-bottom: 40px;
         @include media-breakpoint-up(lg) {
             margin-bottom: 80px;
