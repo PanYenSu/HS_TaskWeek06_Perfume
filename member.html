@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Product</title>
+  <title>Mypage</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -42,7 +42,7 @@
                   person
                   </span>
                   <h5 class="m-0 text-center  py-3">
-                     log in 
+                     Mypage 
                   </h5></a>
             </li>
             <li class="nav-item">
@@ -68,7 +68,7 @@
             <li class="nav-item">
               <a class="nav-link d-lg-none  p-0 " href="login.html">
                 <h5 class="m-0 text-center py-3">
-                   log in 
+                   Mypage 
                 </h5></a>
             </li>
           </ul>
@@ -112,69 +112,145 @@
       
 
   
-<section class="product">
-  <div class="container row justify-content-between flex-wrap">
-    <div class="col-12 col-lg-8 pl-lg-0">
-      <img src="./assets/images/product1.jpg" class="img-fluid mb-12 mb-lg-0" alt="...">
-    </div>
-
-      <div class="col-12  col-lg-4 pr-lg-0 mb-13 mb-lg-0">
-        <h2 class="font-weight-bold">CHANEL N°5</h2>
-        <p class="h5 font-weight-light">N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
-        <p class="h5 font-weight-light">NT$4,980</p>
-  
-          <div class="input-group">
-            <select class="custom-select border-primary" id="inputGroupSelect04" aria-label="Example select with button addon">
-              <option value="1" selected>1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-            <div class="input-group-append">
-              <button class="btn btn-addCard btn-primary" type="button" data-toggle="modal" data-target="#add-successModal">加入購物車</button>
+<section class="member">
+    <div class="container row flex-column flex-lg-row justify-content-between ">
+      <div class="col-12 col-lg-2 pl-lg-0">
+        <h5 class="d-none d-lg-block pb-8">會員中心</h5>
+        <ul class="nav d-flex flex-lg-column justify-content-between justify-content-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active p-0 pb-4 " href="#">會員資料修改</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-0 pb-4" href="#">訂單查詢</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-0 pb-4" href="#">退／換貨申請</a>
+            </li>
+          </ul>
+      </div>
+      <div class="col-12 col-lg-7 order-12 ">
+        <p class="mb-4 border-bottom font-weight-bold pb-2">個人資料修改</p>
+        <form>            
+          <div class="form-group row">
+            <label for="staticEmail" class="col-3 col-sm-2 col-form-label">會員帳號</label>
+            <div class="col-8">
+              <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
             </div>
           </div>
-          <a class="btn-product-favorite d-flex " data-toggle="modal" data-target="#add-favoriteModal">
-            <span class="material-icons material-icons-favorite text-primary">
-                favorite
+          <div class="form-group row">
+            <label for="inputName" class="col-3 col-sm-2 col-form-label">會員姓名</label>
+            <input type="text" class="col-8  form-control" id="inputName" placeholder="">
+          </div>
+          <div class="form-group row">
+            <label for="inputgGender" class="col-3 col-sm-2 col-form-label">會員性別</label>
+            <select id="inputgGender" class="col-2 form-control">
+              <option selected>女</option>
+              <option>男</option>
+            </select>
+          </div>
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-3 col-sm-2 col-form-label">電子信箱</label>
+            <input type="email" class="form-control col-8" id="inputEmail3" placeholder="email@example.com">
+          </div>
+          <div class="form-group row">
+            <label for="inputphone" class="col-3 col-sm-2 col-form-label">手機號碼</label>
+            <input type="text" class="col-8 form-control" id="inputphone" placeholder="">
+          </div>
+
+            <div class="form-group row">
+              <label for="inputgAddressA" class="col-3 col-sm-2 col-form-label">聯絡地址</label>
+              <div class="col-8 p-0">
+                <select id="inputgAddress1" class="col-12 col-sm-5 form-control mb-2">
+                  <option selected>台灣及離島</option>
+                  <option>...</option>
+                </select>
+                <div class="row m-0 mb-2">
+                  <select id="inputgAddress2" class="col-5 form-control mr-2">
+                    <option selected>高雄市</option>
+                    <option>...</option>
+                  </select>
+                  <select id="inputgAddress3" class="col-5 form-control ml-2">
+                    <option selected>鹽埕區</option>
+                    <option>...</option>
+                  </select>
+                </div>               
+              </div>
+              <input type="text" class="col-8 offset-3 offset-sm-2 form-control" id="inputAddressA" placeholder="請輸入地址">    
+           </div>
+
+           <div class=" custom-checkbox col-8 offset-3 offset-sm-2 mb-7">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">我願意收到最新優惠情報</label>
+          </div>
+
+          <div class="form-group row">
+            <label for="inputgAddressB" class="col-3 col-sm-2 col-form-label">配送地址</label>
+            <div class="col-8 p-0">
+              <select id="inputgAddress1" class="col-12 col-sm-5 form-control mb-2">
+                <option selected>台灣及離島</option>
+                <option>...</option>
+              </select>
+              <div class="row m-0 mb-2">
+                <select id="inputgAddress2" class="col-5 form-control mr-2">
+                  <option selected>高雄市</option>
+                  <option>...</option>
+                </select>
+                <select id="inputgAddress3" class="col-5 form-control ml-2">
+                  <option selected>鹽埕區</option>
+                  <option>...</option>
+                </select>
+              </div>               
+            </div>
+            <input type="text" class="col-8 offset-3 offset-sm-2 form-control mb-3" id="inputAddressB" placeholder="請輸入地址">   
+            <button type="button" class=" offset-3 offset-sm-2 btn-member btn btn-primary">確定修改</button> 
+          </div>
+          </form>
+
+          <p class="mb-4 border-bottom font-weight-bold pb-2">修改密碼</p>
+        <form>            
+          <div class="form-group row">
+            <label for="exampleInputPassword1" class="col-3 col-sm-2 col-form-label">舊密碼</label>
+            <input type="password" class="col-8 form-control" id="exampleInputPassword1" placeholder="">
+          </div>
+          <div class="form-group row">
+            <label for="exampleInputPassword2" class="col-3 col-sm-2 col-form-label">新密碼</label>
+            <input type="password" class="col-8 form-control" id="exampleInputPassword2" placeholder="">
+          </div>
+          <div class="form-group row">
+            <label for="exampleInputPassword3" class="col-3 col-sm-2 col-form-label">確認密碼</label>
+            <input type="password" class="col-8 form-control mb-3" id="exampleInputPassword3" placeholder="">
+            <button type="button" class=" offset-3 offset-sm-2 btn-member btn btn-primary">變更密碼</button> 
+          </div>
+          </form>
+      </div>
+
+      <div class="col-12 col-lg-3 pr-lg-0 order-lg-12 ">
+        <div class="d-flex">
+          <span class="material-icons ">
+            person
             </span>
-            <p>加入我的收藏</p>
-          </a>
-          <p class="font-weight-bold mb-2">商品購買須知</p>
-          <p class="font-weight-light mb-7">產品因拍攝關係顏色可能略有差異，實際以廠商出貨為主。 商品情境照為示意用，僅商品主體不包含其他配件，請以規格內容物為主。 D’Perfume 盡可能確保所列商品備貨充足，但偶爾仍會有產品售罄的情況。如您所訂購的商品庫存不足，我們將盡快以電子郵件通知您。任何訂單變動均會在訂單總額與出貨訊息內更新。</p>
-          <p class="font-weight-bold mb-2">退換貨須知</p>
-          <p class="font-weight-light ">依《消費者保護法》的規定，於全站購物皆享有商品到貨【七日猶豫期】（含例假日）之權益。若收到的商品有任何問題，可於猶豫期內申請退貨。</p>  
-      </div>
+          <p>會員編碼<span class="h5 ml-1">T00020080615</span></p>
+        </div>
+        <dl class="row">
+          <dt class="col-3 col-sm-5 font-weight-normal">購物車</dt>
+          <dd class="col-7 ">56</dd>
+        
+          <dt class="col-3 col-sm-5 font-weight-normal">我的收藏</dt>
+          <dd class="col-7 ">23</dd>
 
-      <div class="d-flex justify-content-between mb-lg-12 col-12 col-lg-8 pl-0">
-        <img src="./assets/images/product2.jpg" class="img-fluid w-50 pr-3  mb-lg-0 mb-3" alt="...">
-        <img src="./assets/images/product3.jpg" class="img-fluid w-50 pl-3  mb-lg-0 mb-3" alt="...">
+          <dt class="col-3 col-sm-5 font-weight-normal">會員紅利</dt>
+          <dd class="col-7">8</dd>
+
+          <dt class="col-3 col-sm-5 font-weight-normal">我的收藏</dt>
+          <dd class="col-7">2680</dd>
+
+          <dt class="col-3 col-sm-5 font-weight-normal">邀請碼</dt>
+          <dd class="col-7">TK2075</dd>
+          <small class="col-sm-12 font-weight-light">新戶輸入邀請碼即可獲贈紅利點數1000點</small>
+        </dl>
       </div>
-      <div class="col-12 col-lg-8 pl-lg-0">
-        <img src="./assets/images/product1.jpg" class="img-fluid " alt="...">
-      </div>     
-  </div>
+    </div>
 </section>
-
-<!-- add-successModal -->
-<div class="modal fade" id="add-successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-sm modal-md" role="document">
-    <div class="modal-content">  
-      <div class="modal-body">
-        <h5 class="text-primary text-center m-0">已加入購物車</h5>
-      </div> 
-    </div>
-  </div>
-</div>
-<!-- add-favoriteModal -->
-<div class="modal fade" id="add-favoriteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-sm modal-md " role="document">
-    <div class="modal-content">  
-      <div class="modal-body">
-        <h5 class="text-primary text-center m-0">已加入我的收藏</h5>
-      </div> 
-    </div>
-  </div>
-</div>
 
 
   
