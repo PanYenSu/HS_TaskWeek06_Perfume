@@ -66,8 +66,10 @@
                 <h5 class="m-0 text-center py-3">Contact</h5></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-lg-none  p-0 " href="#">
-                <h5 class="m-0 text-center py-3">Mypage</h5></a>
+              <a class="nav-link d-lg-none  p-0 " href="login.html">
+                <h5 class="m-0 text-center py-3">
+                  <% if (title === "Mypage") { %> Mypage <% } else { %> log in <% } %>
+                </h5></a>
             </li>
           </ul>
         </div>
