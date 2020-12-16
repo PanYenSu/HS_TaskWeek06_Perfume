@@ -11348,7 +11348,7 @@ textarea {
   .page-link-products:hover {
     color: #916019; }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .modal-md {
     max-width: 540px; } }
 
@@ -11416,7 +11416,10 @@ textarea {
   padding-bottom: 52px; }
 
 .description .media-body .train-btn {
-  font-size: 24px; }
+  padding: 18px 51px; }
+  @media (max-width: 991.98px) {
+    .description .media-body .train-btn {
+      min-width: 345px; } }
 
 .popular .list-group {
   padding-top: 32px;
