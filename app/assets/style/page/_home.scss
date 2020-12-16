@@ -43,7 +43,11 @@
             padding-bottom: 52px;
         }
         .train-btn {
-            font-size: 24px;
+            // min-width: 350px;
+            padding: 18px 51px;
+            @include media-breakpoint-down(md) {
+            min-width: 345px;
+            }
         }
     }
 }
