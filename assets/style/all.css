@@ -11379,9 +11379,12 @@ textarea {
       width: 40%; } }
 
 .banner {
-  background: url(../images/index1.jpg) center center no-repeat;
+  background-image: url("../images/index1.jpg");
+  height: 870px;
+  background-position: center center;
   background-size: cover;
-  min-height: 870px; }
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
   .banner-content {
     min-width: 445px;
     padding-top: 295px;
