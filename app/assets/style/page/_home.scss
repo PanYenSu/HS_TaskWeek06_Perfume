@@ -1,7 +1,11 @@
 .banner {
-    background: url(../images/index1.jpg) center center no-repeat;
-    background-size: cover; 
-    min-height: 870px;
+    // background: url(../images/index1.jpg) center center no-repeat;
+    // background-size: cover; 
+    // min-height: 870px;
+    @include banner("../images/index1.jpg", 870px);
+    // 背景圖視差滾動
+    background-attachment: fixed;
+    
     &-content {
         min-width: 445px;
         padding-top: 295px;
